@@ -64,8 +64,20 @@ To create a new blog website:
 
     - In Terminal, set up the remotes for this project based on the repository you just made on GitHub
 
-    - run `git push origin master`, assuming you're working on the master branch
+    - run `git push -u origin master`, assuming you're working on the master branch
 
 4. Create a GitHub Pages branch
 
-5. Wait for GitHub Pages to build the site (rather quick).
+    - In order for GitHub to know what to host, you must create a branch that's specifically tasked with this purpose. You will not be using the master branch in this case. You must name it 'gh-pages'
+
+    - Run `git checkout -b gh-pages`
+
+    - Run `git push origin gh-pages`
+
+5. Wait for GitHub Pages to build the site (rather quick, ~10 mins).
+
+    - You must also set a baseurl within the _config.yml file of your project. Example: `baseurl: '/brevity-bits'`
+
+    - Also, you must open up the header.html file within the _includes directory and change the homelink href value to `{{ site.baseurl }}/`. You should be able to find this in an anchor tag within the first 10 lines of the file.
+
+    - Push your changes up for the gh-pages branch after committing `git push origin gh-pages`

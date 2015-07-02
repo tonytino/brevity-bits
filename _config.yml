@@ -3,7 +3,7 @@ title: BrevityBits
 email: tony91139@gmail.com
 description: > #
   Your source for high-level guides on how to use different programming technologies, tailored towards novice programmers seeking brevity.
-baseurl: "" # the subpath of your site, e.g. /blog/
+baseurl: '/brevity-bits' # the subpath of your site, e.g. /blog/
 url: "http://brevitybits.com" # the base hostname & protocol for your site
 twitter_username: tonytino139
 github_username:  tonytino
