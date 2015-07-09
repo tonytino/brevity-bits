@@ -2,7 +2,7 @@
 title: BrevityBits
 email: tony91139@gmail.com
 description: > #
-  Your source for high-level guides on how to use different programming technologies, tailored towards novice programmers seeking brevity.
+    Your source for high-level guides on how to use different programming technologies, tailored towards novice programmers seeking brevity.
 baseurl: '/brevity-bits' # the subpath of your site, e.g. /blog/
 url: "http://brevitybits.com" # the base hostname & protocol for your site
 twitter_username: tonytino139
@@ -11,3 +11,20 @@ github_username:  tonytino
 # Build settings
 markdown: kramdown
 permalink: /:title
+
+# Defaults
+defaults:
+    -
+        scope:
+            path: "" # an empty string here means all files in the project
+            type: "posts" # previously `post` in Jekyll 2.2.
+        values:
+            author: Anthony Hernandez
+            layout: "post"
+
+    -
+        scope:
+            path: "" # an empty string here means all files in the project
+            type: "pages" # previously `post` in Jekyll 2.2.
+        values:
+            layout: "page"

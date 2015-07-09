@@ -1,0 +1,23 @@
+---
+layout: post
+title:  "Welcome to Monkey Town!"
+date:   2015-04-24
+categories: monkey
+---
+This is monkey business.
+
+And business is booming...
+
+{% highlight ruby %}
+def business_model(name)
+  puts "Bananas"
+end
+print_hi('monkey')
+#=> bananas are for monkeys
+{% endhighlight %}
+
+Check out the [monkey docs][monkey] for more info on how to get the most out of bananas. Monkey can be reached at: [monkey contact][monkey-site]. If you have bananas, you can send them to [monkey's business address][monkey-house].
+
+[monkey]:      http://monkey.com
+[monkey-site]:   http://tonytino.github.io
+[monkey-house]:   http://tonytino.github.io

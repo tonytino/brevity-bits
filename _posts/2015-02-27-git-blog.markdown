@@ -1,0 +1,26 @@
+---
+layout: post
+title:  "Version Control, Git, and GitHub"
+date:   2015-02-27
+categories: technical
+---
+### Version control provides benefits such as:
+- The ability to track the work and revisions that have been made to a project over time, including comments detailing changes
+- Allows you to create backups of your work, which becomes useful if your project (such as some code) stops working suddenly for an unexplainable and/or unresolvable reason
+- Makes it possible for multiple individuals to be working on the same project at the same time without impeding each others' workflow
+- Allows for controlling what changes (made by others) become official
+
+### Git assists with tracking changes by:
+
+- Keeping a running log of where changes have been made, such as which specific files (not limited to just coding), which allows to you identify if any accidently changes were made to the wrong file or restore to a specific previous version based on revision comments
+- Allowing you to compare your local files to the same remote files located on the internet to see if they differ, thereby allowing you to either upload or download and merge the changes, depending on where they have taken place
+- Allows you to save (or commit) changes you or others have made, including a message explaining why the changes were made and creating a new version in the process
+- Utlizies your harddrive space efficiently by not creating an entirely new copy of your entire portfolio of work each time you make a revision, while doing this quickly and making it easy to do
+
+### While you can use a thumbdrive or a cloud storage host to share your code with others who may be helping you with a coding project, GitHub provides features that make it much more advantageous from an efficiency and workflow standpoint, such as:
+
+- The ability for multiple individuals to share their work instantly with each other and request assistance
+- The ability for multiple individuals to make changes simultaneously to the same files without overwriting the work of others
+- The ability to clone any public (or private, if you have access) project hosted online and make your own revisions to it without affecting the original; should you choose to share your changes, you can send them as a request to update and, if appropriate, they may be accepted by whoever manages the project
+- A central location for everyone to access the same files and see what changes have been made to those files by others
+- A platform designed specifically for sharing code, meaning it does not affect the integrity of the code

@@ -1,0 +1,18 @@
+---
+layout: post
+title:  "Active Record: A Diamond in the Rough"
+date:   2015-04-18
+categories: technical
+---
+
+### Active Record: What Is It?
+
+In essence, Active Record is the gem (in case you don't know already, Rails is essentially comprised of seven Ruby gems that work in sync with each other) that is responsible for anything related to databases, something that is also known as an ORM (we'll come back to that). Active Record handles tasks like building, managing, organizing, and retrieving data for you, all of which is stored within a database that Active Record is responsible for (rather than you being the one writing out all of the code/logic). I'm sure you want some examples of when this is necessary: posting content on social media sites, logging into your account (which you expect to have information about you already stored in), going through a multi-step purchase process, etc. But wait, I said I was going to come back to ORM (Object-Relational-Mapping). Active Record essentially changes data in a database (which it communicates with using SQL statements that you're not writing - thank goodness) into an object-like format that Ruby can interact with. Further, Active Record knows how to communicate with various database types (sqlite, mySQL, etc.), and will adjust appropriately for you (assuming you set up everything properly), without you having to rewrite anything significant about your application should you decide to change databases (there likely will be some necessary changes to configuration files).
+
+### Example, Please.
+
+Imagine that you want an array instantaneously created that has all of the addresses of your customers (nothing else about them is important, you just want to see your global footprint). Well, if you didn't have Active Record, you would have to connect to your database, write out the SQL code (a query) that goes into your database and retrieves this information (rather simple, sure, but imagine if there were many more factors to consider...), and convert and store the information returned into an array. Instead, you can just call one Active Record command (something like Customers.address.all), which will return the information you desire in an array ready to be interacted with. Again, remember, this is a very simple example, but imagine how difficult and complex these things can become when working with large databases and very specific requests. Trust me, Active Record is a contributing reason as to why Rails is so popular.
+
+For more information, check out either [Treehouse](http://www.teamtreehouse.com) an online education platform for web development (my personal favorite - I'm a happy customer, not a representative) or this introduction provided by [The Odin Project](http://www.theodinproject.com/ruby-on-rails/active-record-basics).
+
+Click [here](http://referrals.trhou.se/anthonyhernandez3) for a discount at Treehouse through me. :)

@@ -1,3 +1,14 @@
+<!-- Logic for capturing and storing an url -->
+
+{% capture location %}
+    {{ page.url | split:'/' }}
+    <!-- page.url returns something like '/about/' -->
+    <!-- to remove the forward slashes, we use split -->
+    <!-- split is removing the '/' from the beginning and end -->
+{% endcapture %}
+
+<!-- End url capture -->
+
 <header class="site-header">
 
   <div class="wrapper">
@@ -15,9 +26,12 @@
 
       <div class="trigger">
         {% for page in site.pages %}
-          {% if page.title %}
-          <a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
-          {% endif %}
+            <!-- assign page title to 'current' variable with everything downcased using the pipe filter -->
+            {% assign current = page.title | downcase %}
+
+            {% if page.title %}
+            <a {% if true %} id="current" {% endif %} class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+            {% endif %}
         {% endfor %}
       </div>
     </nav>

@@ -28,6 +28,17 @@ To create a new blog website:
 ### _layouts directory
 - Files that manage the primary templates of your website, such as a post.
 
+### _site directory
+
+All files and folders that do not begin with an underscore will be built and placed into here. This is what is used for your actual site - nothing outside of this folder is accessible.
+
+### _drafts directory
+
+1. Create a folder called _drafts
+
+2. Create a regular post file within this directory. Note that the default settings will not apply to this due to it existing in a different folder from `_posts`.
+
+3. Use `jekyll serve --drafts` to serve and preview what the posts would look like.
 
 ## Hosting via GitHub Pages
 
@@ -45,7 +56,7 @@ To create a new blog website:
 
 - The URLs designated for user pages and project pages are different. The key difference is that the name of the respository will be inserted after the username and the GitHub Pages domain (e.g. "tonytino.github.io/repo-name"). However, both user pages and project websites can have custom domain names.
 
-### Setting Up
+### Setting Up A Project Page
 
 1. Make sure you have a GitHub account
 
@@ -80,4 +91,53 @@ To create a new blog website:
 
     - Also, you must open up the header.html file within the _includes directory and change the homelink href value to `{{ site.baseurl }}/`. You should be able to find this in an anchor tag within the first 10 lines of the file.
 
-    - Push your changes up for the gh-pages branch after committing `git push origin gh-pages`
+    - Push your changes up for the gh-pages branch after committing `git push origin gh-pages`. Don't panic if it's not available right away like I did. :P
+
+
+**When building a user page, make sure you name the repository like this: 'username.github.io'.** This is a required convention. Just about everything else is the same, except you do NOT need a gh-pages branch for your user page. Instead, you use the master branch.
+
+If you make a GitHub account to build a user page for an organization and want to be able to contribute to it through your primary GitHub account, you must assign yourself as a contributor to such repository (Settings > Collaborators).
+
+### Publishing a New Post
+
+Assuming you have a draft post (and assuming you have a directory to the effective of '_draft', where you save your drafts), you can use Terminal to quickly move and rename the file.
+
+```
+mv _drafts/file-name.md _posts/2015-07-02-file-name.md
+```
+
+### Publishing a New Page
+
+Pages can be things like your about me or contact me pages, and can be written in either html or markdown. You still put a front matter block at the top in both cases.
+
+1. Make a new file in your root directory (e.g. contact.md)
+
+2. Add a front matter block at the top of the file.
+
+*Note: Remember that default variables are typically scope specific.*
+
+### Pagination
+
+[See Jekyll Docs.](http://jekyllrb.com/docs/pagination/)
+
+### Common Liquid Tags
+
+[Liquid Docs](https://github.com/Shopify/liquid/wiki/Liquid-for-Designers)
+
+- **assign** - Assigns some value to a variable
+
+- **capture** - Block tag that captures text into a variable
+
+- **comment** - Block tag, comments out the text in the block
+
+- **cycle** - Cycle is usually used within a loop to alternate between values, like colors or DOM classes.
+
+- **for** - For loop
+
+- **break** - Exits a for loop
+
+- **continue** - Skips the remaining code in the current for loop and continues with the next loop
+
+- **if** - Standard if/else block
+
+- **include** - Includes another template; useful for partials

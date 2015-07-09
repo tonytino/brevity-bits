@@ -13,15 +13,17 @@
         - Three different means to test comprehension, including: exposing user to a set of words via a dialogue (for the entire set of words) or singular paragraphs (for specific words); populating the correct word from the word set within a sentence with a missing word; some other idea.
         - Can be tailored to specific topics, such as programming, and subtopics, such as JavaScript, by sifting through tweets and blog posts and prominent speakers of the respective topics.
 
-- Build and polish my blog/portfolio
+- Get the basics of my Jekyll blog (brevity-bits) set up - this will be a project page
 
-- Update and polish my resume, and make it into a Responsive Single Page Application for my portfolio
+- Get the basics of my portfolio set up - this will be a user page
+
+- Update and polish my resume, and make it into a *Responsive Single Page Application for my portfolio*
 
 - Create two blogs: one for sharing my learning (BrevityBits) and one for sharing my thoughts (Get In My Head), where I cover things such as: my rational behind decisions, my opinions, and dreams, whatever I just want to talk about.
 
-- Get Jekyll blog live
-
 ### Completed
+
+- Get first Jekyll blog live
 
 ## Programming Related
 
@@ -29,13 +31,11 @@
 
 - Finish SCRUM Treehouse course
 
-- Finish Jekyll Treehouse course
-
-- Write a blog post about the experience of switching from Sublime 2 to 3 (from a junior developer's perspective)
-
 - Finish Ember.js Treehouse course
 
 - Finish Bootstrap/Foundation Treehouse course
+
+- Write a blog post about the experience of switching from Sublime 2 to 3 (from a junior developer's perspective)
 
 - Finish Rails Treehouse courses
 
@@ -57,6 +57,8 @@
 
 - Finish AJAX Treehouse courses
 
+- Finish Jekyll Treehouse course
+
 ## Personal Goals
 
 ### Outstanding
@@ -72,6 +74,16 @@
 - Go to Hawaii in August
 
 - See my family before my 24th birthday
+
+- Get weight down to 190
+
+- Get weight down to 187
+
+- Get weight down to 185
+
+- Get weight down to 182
+
+- Get weight down to 180
 
 - Get weight down to 177
 
