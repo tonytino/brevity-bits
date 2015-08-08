@@ -3,16 +3,16 @@
 ## Installing Jekyll
 
 You install Jekyll, you need to run the following command in your terminal (console):
-```
+{% highlight ruby %}
   gem install jekyll (if issue with permissions, have 'sudo' before 'gem')
-```
+{% endhighlight %}
 
 ## Creating A New Jekyll Site (Project)
 
 To create a new blog website:
-```
+{% highlight ruby %}
   jekyll new [name]
-```
+{% endhighlight %}
 
 ## About Your New Project
 
@@ -141,3 +141,7 @@ Pages can be things like your about me or contact me pages, and can be written i
 - **if** - Standard if/else block
 
 - **include** - Includes another template; useful for partials
+
+## Additional Resources
+
+[Improved Code Snippets](https://demisx.github.io/jekyll/2014/01/13/improve-code-highlighting-in-jekyll.html)

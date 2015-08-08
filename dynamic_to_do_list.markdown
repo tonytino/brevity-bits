@@ -15,8 +15,6 @@
 
 - Get the basics of my Jekyll blog (brevity-bits) set up - this will be a project page
 
-- Get the basics of my portfolio set up - this will be a user page
-
 - Update and polish my resume, and make it into a *Responsive Single Page Application for my portfolio*
 
 - Create two blogs: one for sharing my learning (BrevityBits) and one for sharing my thoughts (Get In My Head), where I cover things such as: my rational behind decisions, my opinions, and dreams, whatever I just want to talk about.
